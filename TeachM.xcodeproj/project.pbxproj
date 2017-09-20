@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		277F135B1F72D8A2000971E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F135A1F72D8A2000971E2 /* AppDelegate.swift */; };
-		277F135D1F72D8A2000971E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F135C1F72D8A2000971E2 /* ViewController.swift */; };
 		277F13601F72D8A2000971E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F135E1F72D8A2000971E2 /* Main.storyboard */; };
 		277F13631F72D8A2000971E2 /* TeachM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 277F13611F72D8A2000971E2 /* TeachM.xcdatamodeld */; };
 		277F13651F72D8A2000971E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277F13641F72D8A2000971E2 /* Assets.xcassets */; };
 		277F13681F72D8A2000971E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F13661F72D8A2000971E2 /* LaunchScreen.storyboard */; };
 		277F13731F72D8A2000971E2 /* TeachMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F13721F72D8A2000971E2 /* TeachMTests.swift */; };
 		277F137E1F72D8A2000971E2 /* TeachMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F137D1F72D8A2000971E2 /* TeachMUITests.swift */; };
+		277F138C1F72DBD4000971E2 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F138B1F72DBD4000971E2 /* LogInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 /* Begin PBXFileReference section */
 		277F13571F72D8A2000971E2 /* TeachM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeachM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277F135A1F72D8A2000971E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		277F135C1F72D8A2000971E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		277F135F1F72D8A2000971E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		277F13621F72D8A2000971E2 /* TeachM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TeachM.xcdatamodel; sourceTree = "<group>"; };
 		277F13641F72D8A2000971E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		277F13791F72D8A2000971E2 /* TeachMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeachMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		277F137D1F72D8A2000971E2 /* TeachMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachMUITests.swift; sourceTree = "<group>"; };
 		277F137F1F72D8A2000971E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		277F138B1F72DBD4000971E2 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				277F135A1F72D8A2000971E2 /* AppDelegate.swift */,
-				277F135C1F72D8A2000971E2 /* ViewController.swift */,
 				277F135E1F72D8A2000971E2 /* Main.storyboard */,
+				277F138B1F72DBD4000971E2 /* LogInViewController.swift */,
 				277F13641F72D8A2000971E2 /* Assets.xcassets */,
 				277F13661F72D8A2000971E2 /* LaunchScreen.storyboard */,
 				277F13691F72D8A2000971E2 /* Info.plist */,
@@ -266,8 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				277F13631F72D8A2000971E2 /* TeachM.xcdatamodeld in Sources */,
-				277F135D1F72D8A2000971E2 /* ViewController.swift in Sources */,
 				277F135B1F72D8A2000971E2 /* AppDelegate.swift in Sources */,
+				277F138C1F72DBD4000971E2 /* LogInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
