@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27129FA41F79701300EED0F2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27129FA31F79701300EED0F2 /* HomeViewController.swift */; };
+		27129FA61F79707E00EED0F2 /* AssignmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27129FA51F79707E00EED0F2 /* AssignmentsViewController.swift */; };
+		27129FA81F7970AA00EED0F2 /* AttendanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27129FA71F7970AA00EED0F2 /* AttendanceTableViewController.swift */; };
+		27129FAA1F7970C500EED0F2 /* StudentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27129FA91F7970C500EED0F2 /* StudentsTableViewController.swift */; };
 		277F135B1F72D8A2000971E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F135A1F72D8A2000971E2 /* AppDelegate.swift */; };
 		277F13601F72D8A2000971E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F135E1F72D8A2000971E2 /* Main.storyboard */; };
 		277F13631F72D8A2000971E2 /* TeachM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 277F13611F72D8A2000971E2 /* TeachM.xcdatamodeld */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27129FA31F79701300EED0F2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		27129FA51F79707E00EED0F2 /* AssignmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentsViewController.swift; sourceTree = "<group>"; };
+		27129FA71F7970AA00EED0F2 /* AttendanceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceTableViewController.swift; sourceTree = "<group>"; };
+		27129FA91F7970C500EED0F2 /* StudentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsTableViewController.swift; sourceTree = "<group>"; };
 		277F13571F72D8A2000971E2 /* TeachM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeachM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277F135A1F72D8A2000971E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		277F135F1F72D8A2000971E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,6 +109,10 @@
 			children = (
 				277F135A1F72D8A2000971E2 /* AppDelegate.swift */,
 				277F135E1F72D8A2000971E2 /* Main.storyboard */,
+				27129FA91F7970C500EED0F2 /* StudentsTableViewController.swift */,
+				27129FA51F79707E00EED0F2 /* AssignmentsViewController.swift */,
+				27129FA71F7970AA00EED0F2 /* AttendanceTableViewController.swift */,
+				27129FA31F79701300EED0F2 /* HomeViewController.swift */,
 				277F138B1F72DBD4000971E2 /* LogInViewController.swift */,
 				277F13641F72D8A2000971E2 /* Assets.xcassets */,
 				277F13661F72D8A2000971E2 /* LaunchScreen.storyboard */,
@@ -191,23 +203,26 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Sina Eradat";
 				TargetAttributes = {
 					277F13561F72D8A2000971E2 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = JB9S2XD9E3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					277F136D1F72D8A2000971E2 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = JB9S2XD9E3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 277F13561F72D8A2000971E2;
 					};
 					277F13781F72D8A2000971E2 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = JB9S2XD9E3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 277F13561F72D8A2000971E2;
 					};
@@ -265,9 +280,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27129FA81F7970AA00EED0F2 /* AttendanceTableViewController.swift in Sources */,
 				277F13631F72D8A2000971E2 /* TeachM.xcdatamodeld in Sources */,
 				277F135B1F72D8A2000971E2 /* AppDelegate.swift in Sources */,
 				277F138C1F72DBD4000971E2 /* LogInViewController.swift in Sources */,
+				27129FA41F79701300EED0F2 /* HomeViewController.swift in Sources */,
+				27129FAA1F7970C500EED0F2 /* StudentsTableViewController.swift in Sources */,
+				27129FA61F79707E00EED0F2 /* AssignmentsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +351,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -340,7 +361,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -383,7 +408,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -391,7 +418,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -426,7 +457,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BlueThunderProductions.TeachM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -439,7 +471,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BlueThunderProductions.TeachM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -453,7 +486,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BlueThunderProductions.TeachMTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeachM.app/TeachM";
 			};
 			name = Debug;
@@ -468,7 +502,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BlueThunderProductions.TeachMTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeachM.app/TeachM";
 			};
 			name = Release;
@@ -482,7 +517,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BlueThunderProductions.TeachMUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = TeachM;
 			};
 			name = Debug;
@@ -496,7 +532,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BlueThunderProductions.TeachMUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = TeachM;
 			};
 			name = Release;
@@ -520,6 +557,7 @@
 				277F13841F72D8A2000971E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		277F13851F72D8A2000971E2 /* Build configuration list for PBXNativeTarget "TeachMTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +566,7 @@
 				277F13871F72D8A2000971E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		277F13881F72D8A2000971E2 /* Build configuration list for PBXNativeTarget "TeachMUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +575,7 @@
 				277F138A1F72D8A2000971E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
