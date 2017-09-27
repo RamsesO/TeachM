@@ -5,18 +5,56 @@
 //  Created by Sina Eradat on 9/20/17.
 //  Copyright © 2017 Sina Eradat. All rights reserved.
 //
+/*
+ Ramses Ordonez
+ 9/25/17
+ - created a Student struct
+ - added method for parsing JSON files
+ */
 
 import UIKit
 import CoreData
+
+struct Student: Decodable{
+    let studentId: Int
+    let firstName: String
+    let lastName: String
+    let upvotes: Int
+    let downvotes: Int
+    let timesAbsent: Int
+    
+}
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    func parseJson(){
+        let jsonPath = "https://api.myjson.com/bins/emsbl"
+        guard let jsonUrl = URL(string: jsonPath) else{
+            return
+        }
+        
+        URLSession.shared.dataTask(with: jsonUrl){(data,response,err) in
+            guard let data = data else {return}
 
-
+            do{
+                let students = try JSONDecoder().decode([Student].self, from: data)
+                print(students)
+            } catch let jsonErr{
+                print("error: ", jsonErr)
+            }
+            
+            }.resume()
+        
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        parseJson()
         return true
     }
 
