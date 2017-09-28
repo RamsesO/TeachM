@@ -24,15 +24,12 @@ class StudentsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // 1
+
         studentRef.observe(.value, with: { snapshot in
-        // 2
+
         var newItems: [Student] = []
-        
-        // 3
+
         for item in snapshot.children {
-            // 4
             let studentItem = Student(snapshot: item as! DataSnapshot)
             newItems.append(studentItem)
         }
@@ -40,6 +37,7 @@ class StudentsTableViewController: UITableViewController {
         self.studentItems = newItems
         self.tableView.reloadData()
         })
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
