@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import Firebase
 
 class StudentsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let ref = Database.database().reference(withPath: "students")
+        
+        ref.observe(.value, with: { snapshot in
+            print(snapshot.value)
+        })
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
