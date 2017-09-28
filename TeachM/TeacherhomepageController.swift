@@ -12,7 +12,7 @@ class TeacherhomepageController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-   
+    }
         
         // load the view first
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
