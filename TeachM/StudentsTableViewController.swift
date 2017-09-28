@@ -6,8 +6,15 @@
 //  Copyright © 2017 Sina Eradat. All rights reserved.
 //
 
+/*
+ 
+ Ramses Ordonez
+ 9/28/17
+ 
+ */
 import UIKit
 import Firebase
+
 
 class StudentsTableViewController: UITableViewController {
 
