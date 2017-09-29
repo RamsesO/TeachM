@@ -17,8 +17,6 @@
 		277F13631F72D8A2000971E2 /* TeachM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 277F13611F72D8A2000971E2 /* TeachM.xcdatamodeld */; };
 		277F13651F72D8A2000971E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277F13641F72D8A2000971E2 /* Assets.xcassets */; };
 		277F13681F72D8A2000971E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F13661F72D8A2000971E2 /* LaunchScreen.storyboard */; };
-		277F13731F72D8A2000971E2 /* TeachMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F13721F72D8A2000971E2 /* TeachMTests.swift */; };
-		277F137E1F72D8A2000971E2 /* TeachMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F137D1F72D8A2000971E2 /* TeachMUITests.swift */; };
 		277F138C1F72DBD4000971E2 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F138B1F72DBD4000971E2 /* LogInViewController.swift */; };
 		3A3AE4961F7D4A87005593D4 /* TeacherhomepageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AE4951F7D4A87005593D4 /* TeacherhomepageController.swift */; };
 /* End PBXBuildFile section */
@@ -54,11 +52,7 @@
 		277F13671F72D8A2000971E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		277F13691F72D8A2000971E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		277F136E1F72D8A2000971E2 /* TeachMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeachMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		277F13721F72D8A2000971E2 /* TeachMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachMTests.swift; sourceTree = "<group>"; };
-		277F13741F72D8A2000971E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		277F13791F72D8A2000971E2 /* TeachMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeachMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		277F137D1F72D8A2000971E2 /* TeachMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachMUITests.swift; sourceTree = "<group>"; };
-		277F137F1F72D8A2000971E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		277F138B1F72DBD4000971E2 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		3A3AE4951F7D4A87005593D4 /* TeacherhomepageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherhomepageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,8 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				277F13591F72D8A2000971E2 /* TeachM */,
-				277F13711F72D8A2000971E2 /* TeachMTests */,
-				277F137C1F72D8A2000971E2 /* TeachMUITests */,
 				277F13581F72D8A2000971E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,24 +118,6 @@
 				277F13611F72D8A2000971E2 /* TeachM.xcdatamodeld */,
 			);
 			path = TeachM;
-			sourceTree = "<group>";
-		};
-		277F13711F72D8A2000971E2 /* TeachMTests */ = {
-			isa = PBXGroup;
-			children = (
-				277F13721F72D8A2000971E2 /* TeachMTests.swift */,
-				277F13741F72D8A2000971E2 /* Info.plist */,
-			);
-			path = TeachMTests;
-			sourceTree = "<group>";
-		};
-		277F137C1F72D8A2000971E2 /* TeachMUITests */ = {
-			isa = PBXGroup;
-			children = (
-				277F137D1F72D8A2000971E2 /* TeachMUITests.swift */,
-				277F137F1F72D8A2000971E2 /* Info.plist */,
-			);
-			path = TeachMUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +276,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				277F13731F72D8A2000971E2 /* TeachMTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +283,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				277F137E1F72D8A2000971E2 /* TeachMUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
