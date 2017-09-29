@@ -16,14 +16,14 @@ struct Assignment{
     let associatedClassId: Int
     let assignmentId: Int
     let assignmentName: String
-    let studentsAcknowledged: [Int]
+    // studentsAcknowledged: [Int]
     
     init(assignmentName: String, associatedClassId: Int, key: String = "", assignmentId: Int, studentsAcknowledged: [Int]) {
         self.key = key
         self.associatedClassId = associatedClassId
         self.assignmentId = assignmentId
         self.assignmentName = assignmentName
-        self.studentsAcknowledged = studentsAcknowledged
+        //self.studentsAcknowledged = studentsAcknowledged
         self.ref = nil
     }
     
@@ -33,7 +33,8 @@ struct Assignment{
         associatedClassId = snapshotValue["associatedClassId"] as! Int
         assignmentId = snapshotValue["assignmentId"] as! Int
         assignmentName = snapshotValue["assignmentName"] as! String
-        studentsAcknowledged = snapshotValue["studentsAcknowledged"] as! [Int]
+        
+        //studentsAcknowledged = snapshotValue["studentsAcknowledged"] as! [Int]
         ref = snapshot.ref
         
     }

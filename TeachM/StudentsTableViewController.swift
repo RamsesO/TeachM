@@ -10,6 +10,8 @@
  
  Ramses Ordonez
  9/28/17
+ 9/29/17
+ student stuff. it works now
  
  */
 import UIKit
@@ -26,21 +28,29 @@ class StudentsTableViewController: UITableViewController {
         super.viewDidLoad()
 
         studentRef.observe(.value, with: { snapshot in
-
+            
         var newItems: [Student] = []
 
         for item in snapshot.children {
             let studentItem = Student(snapshot: item as! DataSnapshot)
+            
             newItems.append(studentItem)
         }
 
         self.studentItems = newItems
-        self.tableView.reloadData()
-        })
         
-        for student in studentItems{
-            print(student.firstName)
+            
+        //PUT THE GENERATOR FOR STUDENT STUFF HERE
+        for student in self.studentItems{
+            print(student.firstName + " " + student.lastName)
         }
+        
+        //this command should RELOAD/POPULATE the data. i saw it in an example
+        self.tableView.reloadData()
+
+        })
+
+
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

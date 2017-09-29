@@ -11,6 +11,7 @@
 		2215F1D51F7DBE0400BFE2EC /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2215F1D41F7DBE0400BFE2EC /* Assignment.swift */; };
 		228E7EB81F7DAD6F00E3538C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 228E7EB71F7DAD6F00E3538C /* GoogleService-Info.plist */; };
 		22D5F3091F7A22F8000006A5 /* AttendanceModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22D5F3071F7A22F8000006A5 /* AttendanceModel.xcdatamodeld */; };
+		22DC78001F7EF9D000747398 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC77FF1F7EF9D000747398 /* Class.swift */; };
 		27129FA41F79701300EED0F2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27129FA31F79701300EED0F2 /* HomeViewController.swift */; };
 		27129FA61F79707E00EED0F2 /* AssignmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27129FA51F79707E00EED0F2 /* AssignmentsViewController.swift */; };
 		27129FA81F7970AA00EED0F2 /* AttendanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27129FA71F7970AA00EED0F2 /* AttendanceTableViewController.swift */; };
@@ -52,6 +53,7 @@
 		2215F1D41F7DBE0400BFE2EC /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
 		228E7EB71F7DAD6F00E3538C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		22D5F3081F7A22F8000006A5 /* AttendanceModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AttendanceModel.xcdatamodel; sourceTree = "<group>"; };
+		22DC77FF1F7EF9D000747398 /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
 		27129FA31F79701300EED0F2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		27129FA51F79707E00EED0F2 /* AssignmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentsViewController.swift; sourceTree = "<group>"; };
 		27129FA71F7970AA00EED0F2 /* AttendanceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceTableViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				2215F1D21F7DB80C00BFE2EC /* Student.swift */,
 				2215F1D41F7DBE0400BFE2EC /* Assignment.swift */,
+				22DC77FF1F7EF9D000747398 /* Class.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27129FA81F7970AA00EED0F2 /* AttendanceTableViewController.swift in Sources */,
+				22DC78001F7EF9D000747398 /* Class.swift in Sources */,
 				277F13631F72D8A2000971E2 /* TeachM.xcdatamodeld in Sources */,
 				277F135B1F72D8A2000971E2 /* AppDelegate.swift in Sources */,
 				277F138C1F72DBD4000971E2 /* LogInViewController.swift in Sources */,
