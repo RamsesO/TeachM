@@ -38,6 +38,10 @@ class StudentsTableViewController: UITableViewController {
         self.tableView.reloadData()
         })
         
+        for student in studentItems{
+            print(student.firstName)
+        }
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

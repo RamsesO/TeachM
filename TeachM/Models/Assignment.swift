@@ -13,33 +13,27 @@ struct Assignment{
     
     let key: String
     let ref: DatabaseReference?
-    let studentId: Int
-    let firstName: String
-    let lastName: String
-    let upvotes: Int
-    let downvotes: Int
-    let timesAbsent: Int
+    let associatedClassId: Int
+    let assignmentId: Int
+    let assignmentName: String
+    let studentsAcknowledged: [Int]
     
-    init(firstName: String, lastName: String, studentId: Int, key: String = "", upvotes: Int, downvotes: Int, timesAbsent: Int) {
+    init(assignmentName: String, associatedClassId: Int, key: String = "", assignmentId: Int, studentsAcknowledged: [Int]) {
         self.key = key
-        self.firstName = firstName
-        self.lastName = lastName
-        self.studentId = studentId
-        self.upvotes = upvotes
-        self.downvotes = downvotes
-        self.timesAbsent = timesAbsent
+        self.associatedClassId = associatedClassId
+        self.assignmentId = assignmentId
+        self.assignmentName = assignmentName
+        self.studentsAcknowledged = studentsAcknowledged
         self.ref = nil
     }
     
     init(snapshot: DataSnapshot){
         key = snapshot.key
         let snapshotValue = snapshot.value as! [String: AnyObject]
-        studentId = snapshotValue["studentId"] as! Int
-        upvotes = snapshotValue["upvotes"] as! Int
-        downvotes = snapshotValue["downvotes"] as! Int
-        timesAbsent = snapshotValue["timesAbsent"] as! Int
-        firstName = snapshotValue["firstName"] as! String
-        lastName = snapshotValue["lastName"] as! String
+        associatedClassId = snapshotValue["associatedClassId"] as! Int
+        assignmentId = snapshotValue["assignmentId"] as! Int
+        assignmentName = snapshotValue["assignmentName"] as! String
+        studentsAcknowledged = snapshotValue["studentsAcknowledged"] as! [Int]
         ref = snapshot.ref
         
     }
