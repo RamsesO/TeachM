@@ -6,52 +6,13 @@
 //  Copyright © 2017 Sina Eradat. All rights reserved.
 //
 
-/*
- 
- Ramses Ordonez
- 9/28/17
- 9/29/17
- student stuff. it works now
- 
- */
 import UIKit
-import Firebase
-
 
 class StudentsTableViewController: UITableViewController {
-    
-    //properties
-    var studentItems: [Student] = []
-    let studentRef = Database.database().reference(withPath: "students")
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        studentRef.observe(.value, with: { snapshot in
-            
-        var newItems: [Student] = []
-
-        for item in snapshot.children {
-            let studentItem = Student(snapshot: item as! DataSnapshot)
-            
-            newItems.append(studentItem)
-        }
-
-        self.studentItems = newItems
-        
-            
-        //PUT THE GENERATOR FOR STUDENT STUFF HERE
-        for student in self.studentItems{
-            print(student.firstName + " " + student.lastName)
-        }
-        
-        //this command should RELOAD/POPULATE the data. i saw it in an example
-        self.tableView.reloadData()
-
-        })
-
-
-        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
