@@ -36,15 +36,15 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="TYM-s3-KRS">
-                                <rect key="frame" x="105" y="318" width="164" height="30"/>
+                                <rect key="frame" x="105" y="318" width="154" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVT-Ov-lbK">
-                                        <rect key="frame" x="0.0" y="0.0" width="62" height="30"/>
-                                        <state key="normal" title="Regester"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="57" height="30"/>
+                                        <state key="normal" title="Register"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAG-p0-7eX">
-                                        <rect key="frame" x="102" y="0.0" width="62" height="30"/>
+                                        <rect key="frame" x="97" y="0.0" width="57" height="30"/>
                                         <state key="normal" title="Log In"/>
                                         <connections>
                                             <action selector="logIn:" destination="s3g-d8-Fvz" eventType="touchUpInside" id="RdI-kY-5Jk"/>
