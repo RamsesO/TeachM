@@ -14,24 +14,7 @@
 
 import UIKit
 import CoreData
-
-struct Student: Decodable{
-    let studentId: Int
-    let firstName: String
-    let lastName: String
-    let upvotes: Int
-    let downvotes: Int
-    let timesAbsent: Int
-    
-    init(json: [String: Any]){
-        studentId = json["studentId"] as? Int ?? -1
-        firstName = json["firstName"] as? String ?? ""
-        lastName = json["lastName"] as? String ?? ""
-        upvotes = json["upvotes"] as? Int ?? -1
-        downvotes = json["downvotes"] as? Int ?? -1
-        timesAbsent = json["timesAbsent"] as? Int ?? -1
-    }
-}
+import Firebase
 
 
 @UIApplicationMain
@@ -64,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-      
+        FirebaseApp.configure()
         return true
     }
 
