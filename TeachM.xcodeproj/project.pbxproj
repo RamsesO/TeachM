@@ -21,8 +21,6 @@
 		277F13631F72D8A2000971E2 /* TeachM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 277F13611F72D8A2000971E2 /* TeachM.xcdatamodeld */; };
 		277F13651F72D8A2000971E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277F13641F72D8A2000971E2 /* Assets.xcassets */; };
 		277F13681F72D8A2000971E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F13661F72D8A2000971E2 /* LaunchScreen.storyboard */; };
-		277F13731F72D8A2000971E2 /* TeachMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F13721F72D8A2000971E2 /* TeachMTests.swift */; };
-		277F137E1F72D8A2000971E2 /* TeachMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F137D1F72D8A2000971E2 /* TeachMUITests.swift */; };
 		277F138C1F72DBD4000971E2 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F138B1F72DBD4000971E2 /* LogInViewController.swift */; };
 		2EE12A4EE764DBD8D8E81A4C /* Pods_TeachM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462EC21A30AB77C03375CEB8 /* Pods_TeachM.framework */; };
 		8B053F0341A021273393C52C /* Pods_TeachMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3D48C931A87A4DDE71611F /* Pods_TeachMUITests.framework */; };
@@ -66,11 +64,7 @@
 		277F13671F72D8A2000971E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		277F13691F72D8A2000971E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		277F136E1F72D8A2000971E2 /* TeachMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeachMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		277F13721F72D8A2000971E2 /* TeachMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachMTests.swift; sourceTree = "<group>"; };
-		277F13741F72D8A2000971E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		277F13791F72D8A2000971E2 /* TeachMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeachMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		277F137D1F72D8A2000971E2 /* TeachMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachMUITests.swift; sourceTree = "<group>"; };
-		277F137F1F72D8A2000971E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		277F138B1F72DBD4000971E2 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		2DC1C257885F934C645C4444 /* Pods-TeachM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeachM.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeachM/Pods-TeachM.release.xcconfig"; sourceTree = "<group>"; };
 		462EC21A30AB77C03375CEB8 /* Pods_TeachM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeachM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,8 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				277F13591F72D8A2000971E2 /* TeachM */,
-				277F13711F72D8A2000971E2 /* TeachMTests */,
-				277F137C1F72D8A2000971E2 /* TeachMUITests */,
 				277F13581F72D8A2000971E2 /* Products */,
 				68609BAF6AAC59D88D83E7ED /* Pods */,
 				7FF38D70DA63E28ECC3D7418 /* Frameworks */,
@@ -151,6 +143,7 @@
 				22D5F3071F7A22F8000006A5 /* AttendanceModel.xcdatamodeld */,
 				27129FA91F7970C500EED0F2 /* StudentsTableViewController.swift */,
 				27129FA51F79707E00EED0F2 /* AssignmentsViewController.swift */,
+				3A3AE4951F7D4A87005593D4 /* TeacherhomepageController.swift */,
 				27129FA71F7970AA00EED0F2 /* AttendanceTableViewController.swift */,
 				27129FA31F79701300EED0F2 /* HomeViewController.swift */,
 				277F138B1F72DBD4000971E2 /* LogInViewController.swift */,
@@ -528,6 +521,7 @@
 				277F138C1F72DBD4000971E2 /* LogInViewController.swift in Sources */,
 				2215F1D31F7DB80C00BFE2EC /* Student.swift in Sources */,
 				22D5F3091F7A22F8000006A5 /* AttendanceModel.xcdatamodeld in Sources */,
+				3A3AE4961F7D4A87005593D4 /* TeacherhomepageController.swift in Sources */,
 				27129FA41F79701300EED0F2 /* HomeViewController.swift in Sources */,
 				27129FAA1F7970C500EED0F2 /* StudentsTableViewController.swift in Sources */,
 				2215F1D51F7DBE0400BFE2EC /* Assignment.swift in Sources */,
@@ -539,7 +533,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				277F13731F72D8A2000971E2 /* TeachMTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,7 +540,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				277F137E1F72D8A2000971E2 /* TeachMUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
