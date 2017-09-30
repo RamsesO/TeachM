@@ -7,21 +7,46 @@
 //
 
 import UIKit
+import Firebase
 
 class AssignmentsViewController: UIViewController {
-
+    
+    //properties
+    var assignmentItems: [Assignment] = []
+    let assignmentRef = Database.database().reference(withPath: "assignments")
 
     @IBAction func test(_ sender: UIButton) {
       
     }
     
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        assignmentRef.observe(.value, with: { snapshot in
+            
+            var newItems: [Assignment] = []
+            
+            for item in snapshot.children {
+                let assignmentItem = Assignment(snapshot: item as! DataSnapshot)
+                
+                newItems.append(assignmentItem)
+            }
+            
+            self.assignmentItems = newItems
+            
+            
+            //PUT THE GENERATOR FOR STUDENT STUFF HERE
+            for assignment in self.assignmentItems{
+                print(assignment.assignmentName)
+            }
+        })
+        
+        for assignment in self.assignmentItems{
+            print(assignment.assignmentName)
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

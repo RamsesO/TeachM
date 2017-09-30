@@ -19,7 +19,7 @@ import Firebase
 
 
 class StudentsTableViewController: UITableViewController {
-
+    
     //properties
     var studentItems: [Student] = []
     let studentRef = Database.database().reference(withPath: "students")
