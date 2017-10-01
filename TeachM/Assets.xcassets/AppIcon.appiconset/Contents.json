@@ -31,9 +31,8 @@
       "scale" : "3x"
     },
     {
-      "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "Thumbnail.png",
+      "size" : "60x60",
       "scale" : "2x"
     },
     {
@@ -85,12 +84,6 @@
       "idiom" : "ipad",
       "size" : "83.5x83.5",
       "scale" : "2x"
-    },
-    {
-      "size" : "1024x1024",
-      "idiom" : "ios-marketing",
-      "filename" : "Thumbnail-1.png",
-      "scale" : "1x"
     }
   ],
   "info" : {
