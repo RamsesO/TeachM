@@ -25,6 +25,7 @@ class StudentsTableViewController: UITableViewController {
     let studentRef = Database.database().reference(withPath: "students")
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
         studentRef.observe(.value, with: { snapshot in

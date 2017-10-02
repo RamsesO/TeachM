@@ -166,7 +166,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Assignments" id="fx7-v6-aVg"/>
+                    <tabBarItem key="tabBarItem" title="Assignments" image="Assignments" id="fx7-v6-aVg">
+                        <inset key="imageInsets" minX="0.0" minY="260" maxX="0.0" maxY="255"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gtb-0D-vKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -195,7 +197,9 @@
                             <outlet property="delegate" destination="olC-aT-foH" id="G3G-uE-2X1"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Students" id="s0k-Uw-7VK"/>
+                    <tabBarItem key="tabBarItem" title="Students" selectedImage="StudentsFinal" id="s0k-Uw-7VK">
+                        <inset key="imageInsets" minX="0.0" minY="260" maxX="0.0" maxY="260"/>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tnW-yD-xKZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -224,7 +228,9 @@
                             <outlet property="delegate" destination="e6W-AD-GSu" id="at6-Lt-flH"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Attendance" id="8wZ-Kh-hF0"/>
+                    <tabBarItem key="tabBarItem" title="Attendance" image="Attendance" id="8wZ-Kh-hF0">
+                        <inset key="imageInsets" minX="0.0" minY="260" maxX="0.0" maxY="260"/>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dq7-OV-ViU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -243,7 +249,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="crS-lj-0dq"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="crS-lj-0dq">
+                        <inset key="imageInsets" minX="0.0" minY="260" maxX="0.0" maxY="260"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2d-8F-yGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -289,4 +298,10 @@
             <point key="canvasLocation" x="948" y="-54"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Assignments" width="1000" height="1000"/>
+        <image name="Attendance" width="1000" height="1000"/>
+        <image name="Home" width="1000" height="1000"/>
+        <image name="StudentsFinal" width="1000" height="1000"/>
+    </resources>
 </document>

@@ -7,11 +7,39 @@
 //
 
 import UIKit
+import Firebase
 
 class AttendanceTableViewController: UITableViewController {
 
+    //properties
+    var classItems: [Class] = []
+    let classRef = Database.database().reference(withPath: "classes")
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        classRef.observe(.value, with: { snapshot in
+            
+            var newItems: [Class] = []
+            
+            for item in snapshot.children {
+                let classItem = Class(snapshot: item as! DataSnapshot)
+                
+                newItems.append(classItem)
+            }
+            
+            self.classItems = newItems
+            
+            
+            //PUT THE GENERATOR FOR STUDENT STUFF HERE
+            
+            for item in self.classItems{
+                print(item.name)
+                print(item.attendanceDict)
+            }
+        })
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
