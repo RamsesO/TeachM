@@ -14,6 +14,7 @@
 
 import UIKit
 import CoreData
+import Firebase
 
 
 @UIApplicationMain
@@ -21,12 +22,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
+//    func parseJson(){
+//
+//        let jsonPath = "https://api.myjson.com/bins/emsbl"
+//        guard let jsonUrl = URL(string: jsonPath) else{
+//            return
+//        }
+//
+//        URLSession.shared.dataTask(with: jsonUrl){(data,response,err) in
+//            guard let data = data else {return}
+//
+//            do{
+//                let students = try JSONDecoder().decode([Student].self, from: data)
+//
+//            } catch let jsonErr{
+//                print("error: ", jsonErr)
+//            }
+//
+//            }.resume()
+//
+//    }
     
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-      
+        FirebaseApp.configure()
         return true
     }
 
