@@ -15,50 +15,12 @@
 import UIKit
 import CoreData
 
-struct Student: Decodable{
-    let studentId: Int
-    let firstName: String
-    let lastName: String
-    let upvotes: Int
-    let downvotes: Int
-    let timesAbsent: Int
-    
-    init(json: [String: Any]){
-        studentId = json["studentId"] as? Int ?? -1
-        firstName = json["firstName"] as? String ?? ""
-        lastName = json["lastName"] as? String ?? ""
-        upvotes = json["upvotes"] as? Int ?? -1
-        downvotes = json["downvotes"] as? Int ?? -1
-        timesAbsent = json["timesAbsent"] as? Int ?? -1
-    }
-}
-
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-//    func parseJson(){
-//
-//        let jsonPath = "https://api.myjson.com/bins/emsbl"
-//        guard let jsonUrl = URL(string: jsonPath) else{
-//            return
-//        }
-//
-//        URLSession.shared.dataTask(with: jsonUrl){(data,response,err) in
-//            guard let data = data else {return}
-//
-//            do{
-//                let students = try JSONDecoder().decode([Student].self, from: data)
-//
-//            } catch let jsonErr{
-//                print("error: ", jsonErr)
-//            }
-//
-//            }.resume()
-//
-//    }
     
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
