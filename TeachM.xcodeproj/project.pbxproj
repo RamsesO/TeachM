@@ -24,8 +24,8 @@
 		277F13681F72D8A2000971E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277F13661F72D8A2000971E2 /* LaunchScreen.storyboard */; };
 		277F138C1F72DBD4000971E2 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F138B1F72DBD4000971E2 /* LogInViewController.swift */; };
 		2EE12A4EE764DBD8D8E81A4C /* Pods_TeachM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462EC21A30AB77C03375CEB8 /* Pods_TeachM.framework */; };
-		3A01FB641F82A60300A05E88 /* TeacherHomepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A01FB631F82A60300A05E88 /* TeacherHomepage.swift */; };
 		3A01FB671F82A63300A05E88 /* DrawLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A01FB661F82A63300A05E88 /* DrawLine.swift */; };
+		3A01FB6B1F82AC9000A05E88 /* TeacherhomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A01FB6A1F82AC9000A05E88 /* TeacherhomePage.swift */; };
 		8B053F0341A021273393C52C /* Pods_TeachMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3D48C931A87A4DDE71611F /* Pods_TeachMUITests.framework */; };
 		BB74A0BAB208DADD01BA8166 /* Pods_TeachMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3B5164054EE3D515F53710 /* Pods_TeachMTests.framework */; };
 /* End PBXBuildFile section */
@@ -71,8 +71,8 @@
 		277F13791F72D8A2000971E2 /* TeachMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeachMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		277F138B1F72DBD4000971E2 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		2DC1C257885F934C645C4444 /* Pods-TeachM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeachM.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeachM/Pods-TeachM.release.xcconfig"; sourceTree = "<group>"; };
-		3A01FB631F82A60300A05E88 /* TeacherHomepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TeacherHomepage.swift; path = TeachM/teacherhomepge/TeacherHomepage.swift; sourceTree = SOURCE_ROOT; };
 		3A01FB661F82A63300A05E88 /* DrawLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLine.swift; sourceTree = "<group>"; };
+		3A01FB6A1F82AC9000A05E88 /* TeacherhomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherhomePage.swift; sourceTree = "<group>"; };
 		462EC21A30AB77C03375CEB8 /* Pods_TeachM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeachM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47349BC9D1E69D2EC009B23E /* Pods-TeachM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeachM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeachM/Pods-TeachM.debug.xcconfig"; sourceTree = "<group>"; };
 		7E3B5164054EE3D515F53710 /* Pods_TeachMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeachMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,7 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				3A01FB661F82A63300A05E88 /* DrawLine.swift */,
-				3A01FB631F82A60300A05E88 /* TeacherHomepage.swift */,
+				3A01FB6A1F82AC9000A05E88 /* TeacherhomePage.swift */,
 			);
 			path = teacherhomepge;
 			sourceTree = "<group>";
@@ -512,10 +512,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A01FB6B1F82AC9000A05E88 /* TeacherhomePage.swift in Sources */,
 				22DC78041F7F215200747398 /* Teacher.swift in Sources */,
 				3A01FB671F82A63300A05E88 /* DrawLine.swift in Sources */,
 				27129FA81F7970AA00EED0F2 /* AttendanceTableViewController.swift in Sources */,
-				3A01FB641F82A60300A05E88 /* TeacherHomepage.swift in Sources */,
 				22DC78001F7EF9D000747398 /* Class.swift in Sources */,
 				277F13631F72D8A2000971E2 /* TeachM.xcdatamodeld in Sources */,
 				277F135B1F72D8A2000971E2 /* AppDelegate.swift in Sources */,
