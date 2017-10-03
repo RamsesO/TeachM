@@ -131,15 +131,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Teacherprofile" translatesAutoresizingMaskIntoConstraints="NO" id="pyz-SL-pBI">
-                                <rect key="frame" x="39" y="44" width="76" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <connections>
-                            <outlet property="img" destination="pyz-SL-pBI" id="p9A-pr-qQk"/>
-                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kYD-HV-wFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -169,7 +162,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Assignments" image="Assignments" id="fx7-v6-aVg">
+                    <tabBarItem key="tabBarItem" title="Assignments" image="Assignments" selectedImage="Assignments" id="fx7-v6-aVg">
                         <inset key="imageInsets" minX="0.0" minY="260" maxX="0.0" maxY="255"/>
                     </tabBarItem>
                 </viewController>
@@ -231,7 +224,7 @@
                             <outlet property="delegate" destination="e6W-AD-GSu" id="at6-Lt-flH"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Attendance" image="Attendance" id="8wZ-Kh-hF0">
+                    <tabBarItem key="tabBarItem" title="Attendance" image="Attendance" selectedImage="Attendance" id="8wZ-Kh-hF0">
                         <inset key="imageInsets" minX="0.0" minY="260" maxX="0.0" maxY="260"/>
                     </tabBarItem>
                 </tableViewController>
@@ -252,7 +245,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="crS-lj-0dq">
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" selectedImage="Home" id="crS-lj-0dq">
                         <inset key="imageInsets" minX="0.0" minY="260" maxX="0.0" maxY="260"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
@@ -306,6 +299,5 @@
         <image name="Attendance" width="1000" height="1000"/>
         <image name="Home" width="1000" height="1000"/>
         <image name="StudentsFinal" width="1000" height="1000"/>
-        <image name="Teacherprofile" width="300" height="300"/>
     </resources>
 </document>
